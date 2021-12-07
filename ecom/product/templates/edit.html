@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form  action = "/product/save", method ="POST">
+    {%csrf_token%}<br>
+    {{form.pid.label}} :{{form.pid}}<br>
+    {{form.name.label}} :{{form.name}}<br>
+    {{form.brand.label}} :{{form.brand}}<br>
+    {{form.price.label}} :{{form.price}}<br>
+    {{form.qty.label}} :{{form.qty}}<br>
+    {{form.warranty.label}} :{{form.warranty}}<br>
+    {{form.delivery.label}} :{{form.delivery}}<br>
+    <input type="submit">
+
+
+
+
+
+</form>
+</body>
+</html>

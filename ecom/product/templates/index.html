@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> {{msg}}</h1>
+<center> <input type = submit, value=" Add product" onclick="window.location='/product/save';"/></center>
+
+
+<table border ="2">
+    <thead>
+    <th> PId</th>
+    <th>Product Name</th>
+    <th>Price</th>
+    <th>Qty</th>
+    <th>Brand</th>
+    <th>Warranty</th>
+    <th>Delivery</th>
+    <th>Action</th>
+    <th></th>
+    </thead>
+
+    {%if all_products%}
+    {%for prod in all_products%}
+    <tbody>
+    <th>{{prod.pid}}</th>
+    <th>{{prod.name}}</th>
+    <th>{{prod.price}}</th>
+    <th>{{prod.qty}}</th>
+    <th>{{prod.brand}}</th>
+    <th>{{prod.warranty}}</th>
+    <th>{{prod.delivery}}</th>
+    <td><a href ='/product/update/{{prod.pid}}'> EDIT</a>
+        <a href ='/product/delete/{{prod.pid}}'> DELETE</a> </td>
+    </tbody>
+    {% endfor %}
+    {% endif%}
+
+</table>
+
+
+
+
+
+</body>
+</html>
