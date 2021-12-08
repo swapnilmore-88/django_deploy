@@ -127,3 +127,8 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+'''
+url  - http://ec2-18-222-186-255.us-east-2.compute.amazonaws.com/'''
